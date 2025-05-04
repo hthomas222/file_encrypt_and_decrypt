@@ -47,7 +47,7 @@ def check(test):
     sel = ["1", "2"]
     while test not in sel:
             console.log("Please enter either 1 or 2")
-            test = console.input(f"[bold red]Select 1 to exit |""[bold green]| Select 2 to continue: ")
+            test = console.input("[bold red]Select 1 to exit |""[bold green]| Select 2 to continue: ")
     return test
 
 
@@ -80,14 +80,14 @@ while test != "1":
         print()        
     elif selection == "4":
         print()
-        file = console.input(f"[bold purple] Please enter a file you want to encrypt: ")
+        file = console.input("[bold purple] Please enter a file you want to encrypt: ")
         rk = open("key.key", "rb")
         key = rk.read()
         file_encryption(file, key)
         print()
     elif selection == "5":
         print()
-        file = console.input(f"[bold purple] Please enter a file you want to decrypt: ")
+        file = console.input("[bold purple] Please enter a file you want to decrypt: ")
         rk = open("key.key", "rb")
         key = rk.read()
         file_decryption(file, key)
@@ -95,7 +95,7 @@ while test != "1":
     else:
         console.log("[bold red]Please enter a valid choice!")
     print()
-    test = console.input(f"[bold red]Select 1 to exit |""[bold green]| Select 2 to continue: ")
+    test = console.input("[bold red]Select 1 to exit |""[bold green]| Select 2 to continue: ")
     if test != "1":
         x = check(test)
         if x == "1":
